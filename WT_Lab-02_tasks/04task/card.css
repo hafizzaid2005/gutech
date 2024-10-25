@@ -1,0 +1,32 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    height: 100vh;
+    width: 100vw;   
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 19%; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Helvetica;
+    border-radius: 15px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    background-color: #5096D2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+}

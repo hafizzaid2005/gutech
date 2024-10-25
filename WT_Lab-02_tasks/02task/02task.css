@@ -1,0 +1,51 @@
+body{
+    font-family:Helvetica;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    padding:0px 10px 0px 10px;
+    
+}
+.navbar p:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+.left{
+    display: flex;
+}
+.center{
+    display: flex;
+    gap: 25px;   
+}
+.right{
+    display: flex;
+    gap: 24px;
+}
+.right img{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+.logo{  
+    width:100px;
+    border-radius: 20px;
+}
+
+#search{
+    border-radius:18px;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 7px;
+    font-weight: 800;
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+#search:hover , .right img:hover {
+    background-color: #c7c7c7;
+    cursor: pointer;
+}

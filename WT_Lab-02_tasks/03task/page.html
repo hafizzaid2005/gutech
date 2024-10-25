@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="page.css">
+    <title>Document</title>
+</head>
+<body class="m-0 p-0 font-Lucida Sans">
+    <!-- NAVBAR -->
+    <div class="navbar flex w-full items-center justify-between fixed" >
+        <div class="navLogo flex gap-3">
+            <img class="w-48 ml-2 mt-2" src="foodpanda_logo_.svg" alt="">
+        </div>
+        <div class="navdetails flex gap-10">
+            <p class="hover:text-pink-600 cursor-pointer">Home</p>
+            <p class="hover:text-pink-600 cursor-pointer">Order</p>
+            <a href="#about"><p class="hover:text-pink-600 cursor-pointer mr-4">About US</p></a>
+        </div>
+    </div>
+    <!-- MAIN PAGE -->
+     <div id="main" >
+
+        <!-- PAGE-1     -->
+            <div id="page-1" class="h-screen flex justify-center items-center">
+                <div class="btns flex gap-5 justify-center items-center z-10">
+                    <h2 class="hover:bg-pink-600 hover:text-white cursor-pointer rounded-md p-2" >Order Now</h2>
+                    <h2 class="hover:bg-pink-600 hover:text-white cursor-pointer rounded-md p-2" >Explore</h2>
+                </div>
+            </div>
+            
+            
+            
+            <!-- ABOUT US -->
+            <div id="about" class=" h-screen flex flex-col justify-center items-center relative"> 
+                <!-- HEADING -->
+                <div class="heading flex flex-col justify-center items-center mb-9">
+                    <h1 class="text-5xl font-bold mb-5">About Us</h1>
+                    <p class="text-center w-9/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequuntur pariatur reiciendis debitis blanditiis expedita a accusamus. Dicta et a recusandae obcaecati. Repellat ab in doloremque pariatur at ratione repudiandae corrupti quis. Ad porro tempore nihil non unde dolores et exercitationem, sequi debitis blanditiis hic consectetur ipsam nulla id, laudantium iure pariatur!</p>
+                </div>
+                <!-- SERVICES -->
+                 <div class="services">
+                    <ul class="flex flex-col items-center">
+                        <h1 class="text-4xl font-semibold">Our Services</h1>
+                        <li class="hover:bg-black hover:text-white cursor-pointer">Delivery</li>
+                        <li class="hover:bg-black hover:text-white cursor-pointer">Pick-up</li>
+                        <li class="hover:bg-black hover:text-white cursor-pointer">PandaMart</li>
+                    </ul>
+                 </div>
+                <!-- FOOTER -->
+                <footer class="absolute bottom-0">
+                     <h4 style="color: #E11B70;" >
+                         <span style="color:black;" >Copyright &#169; All rights reserved by </span>
+                         Foodpanda
+                     </h1>
+                 </footer>
+             </div>
+        </div>
+</body>
+</html>
