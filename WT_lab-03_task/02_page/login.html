@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="image/pfp.jpg" />
+    <script src="https://cdn.tailwindcss.com/3.3.2"></script>
+    <title>Log-in</title>
+  </head>
+  <body>
+
+    <!-- MAIN -->
+    <div
+      class="main text-white relative text-3xl h-screen flex flex-col justify-center items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+    >
+      <h1 class="uppercase font-semibold text-2xl mb-5 pb-2 border-b">Register here</h1>
+      <div class=""></div>
+
+      <!-- FORM -->
+      <form class="flex gap-7 relative">
+        <!-- LEFT -->
+        <div id="left">
+            <input class="mb-2 text-white px-2 text-base bg-gradient-to-r from-black to-purple-950  rounded-md" type="text"  placeholder="First name" /><br>
+            <input class="mb-2 text-white px-2 text-base bg-gradient-to-r from-black to-purple-950  rounded-md" type="text"  placeholder="username" /><br>
+            <input class="mb-2 text-white px-2 text-base bg-gradient-to-r from-black to-purple-950  rounded-md" type="password"  placeholder="password" />
+        </div>
+
+        <!-- RIGHT -->
+        <div id="right ">
+            <input class="mb-2 text-white px-2 text-base bg-gradient-to-r from-black to-purple-950  rounded-md" type="text"  placeholder="last name" /><br>
+            <input class="mb-2 text-white px-2 text-base bg-gradient-to-r from-black to-purple-950  rounded-md" type="mail"  placeholder="@mail" /><br>
+            <input class="mb-2 text-white px-2 text-base bg-gradient-to-r from-black to-purple-950  rounded-md" type="password"  placeholder="confirm password" />
+        </div>
+    </form>
+
+    <!-- NOT A ROBOT -->
+    <div class="checkbox mt-4">
+        <input type="checkbox" name="robo">
+        <label for="robo" class="text-sm">I am not a robot</label>
+    </div>
+
+    <!-- I AGREE -->
+    <div class="agree">
+        <input type="checkbox" name="agree">
+        <label for="agree" class="text-xs">I have read all terms and conditions</label>
+    </div>
+
+    <!-- BACK AND CONTINUE -->
+    <div class="mt-9 w-1/3 flex justify-between">
+        <button class="bg-black rounded-lg px-10 py-1 text-base">&lt; Back</button>
+        <button class="bg-black rounded-lg px-5 py-1 text-base">Continue ></button>
+    </div>
+    </div>
+  </body>
+</html>

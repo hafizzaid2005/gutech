@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: #4B94FD;
+    color: white;
+    width: 20rem;
+    text-align: center;
+    padding: 2px 10px 2px 10px ;
+    border-radius: 20px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
