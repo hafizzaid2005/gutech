@@ -1,6 +1,4 @@
-//? PAIR WITH WAQAS
-
-
+//? PAIRED WITH WAQAS
 //*RECIPE
 const recipe = {
   name: "biryani", 
@@ -11,9 +9,9 @@ const recipe = {
 };
 //! RECIPE INFO
 const showRecipeInfo = ({ name, cookingTime, difficulty }) => {
-console.log(`${name} takes ${cookingTime} minutes to make and is ${difficulty} difficulty`);
+return `${name} takes ${cookingTime} minutes to make and is ${difficulty} difficulty`;
 };
-//console.log(showRecipeInfo(recipe));
+console.log(showRecipeInfo(recipe));
 
 
 //*INGREDIENTS
@@ -24,20 +22,29 @@ const instructions = {
   specialNotes: "Let the rice dry well",
 };
 //! INGREDIENTS INFO
-const getPreparationNotes = ({ mixingTime, specialNotes }) => {
-console.log(`Mix for ${mixingTime} and remember: ${specialNotes}`);
+const getPreparationNotes = ( { mixingTime, specialNotes } ) => {
+return `Mix for ${mixingTime} and remember: ${specialNotes}`;
 };
-console.log(getPreparationNotes);
+console.log(getPreparationNotes(instructions));
+
+
 
 //* DISPLAY CARD
-const createRecipeCard = (recipe) => {
-    let { name, cookingTime, difficulty, mainIngredient,servings } = recipe;
-    console.log(`
+const createRecipeCard = (recipe, instructions) => {
+  let { name, cookingTime, difficulty, mainIngredient, servings } = recipe;
+  let { mixingTime, specialNotes, preheatingTemp, panSize } = instructions;
+  return (`
       🔪RECIPE NAME : ${name} 🔪 
       ------------------------------
       Difficulty: ${difficulty}
       Time Needed: ${cookingTime} minutes
       Serves: ${servings} people
-      Main Ingredient: ${mainIngredient}`);
+      Main Ingredient: ${mainIngredient}
+      ------------------------------------
+      INSTRUCTIONS:
+      1. Preheat over ${preheatingTemp}
+      2. Use 9 inch pan ${panSize}
+      3. Mix for 10 minutes ${mixingTime}
+      Note: ${specialNotes}`);
 };
-console.log(createRecipeCard(recipe));
+console.log(createRecipeCard(recipe, instructions));
