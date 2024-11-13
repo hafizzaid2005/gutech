@@ -1,5 +1,5 @@
 //* TASK-2
-const filmm = {
+const movie = {
   title: "Dhoom 2",
   year: "2002",
   genre: "action",
@@ -12,6 +12,6 @@ const filmm = {
 };
 function avgRate({ ratings: { imdb, rottenTomamtoes, Metacritic } }) {
   let avg = (imdb + rottenTomamtoes + Metacritic) / 3;
-  console.log(avg);
+  return avg;
 }
-console.log(avgRate(filmm));
+console.log(avgRate(movie));
