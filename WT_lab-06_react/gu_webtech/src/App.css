@@ -1,0 +1,13 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  background-color: #0C0C0C;
+  color: white;
+}
+.greet{
+  color: black;
+  background-color: #27E0B3;
+}
+.head{
+  border-bottom: 2px solid white;
+}
