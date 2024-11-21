@@ -3,7 +3,9 @@ import React from 'react'
 const header = () => {
   return (
     <div className="head">
-      <h1>YOUR ROLL NUMBER IS : 787</h1>
+      <h4>
+        roll no : 787
+      </h4>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Footer from './footer'
 const content = () => {
 const name = "ahsan"
 const lab = "webTech"  
@@ -8,6 +8,7 @@ return (
     <h4>
       This is {name}'s 6th {lab}-lab assignment
     </h4>
+    <Footer/>
   </div>
 );
 }
