@@ -1,6 +1,6 @@
 
 import './App.css';
-import Greeting from './component/zaid';
+import Greeting from './component/greeting';
 import content from "./component/header";
 import Header from './component/header';
 import Content from './component/content';
