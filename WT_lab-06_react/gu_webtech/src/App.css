@@ -20,3 +20,17 @@
 .head{
   font-style: italic;
 }
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footp{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #f8f521;
+  color: black;
+  padding: 0px;
+  margin-bottom: 0;
+}
