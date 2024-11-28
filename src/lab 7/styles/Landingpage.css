@@ -1,0 +1,12 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    text-align: center;
+    background-color: #f4f4f4;
+    }
+    .landing-title {
+    font-size: 3rem;
+    }
