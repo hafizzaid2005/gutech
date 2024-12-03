@@ -1,25 +1,42 @@
 import React from 'react'
-import MyImage from "../assets/images/skills.png";
-const greetings = ({name:naam,occup,age:umar}) => {
+import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import MyImage from "../assets/images/dp.png";
+const greetings = ({name:naam,occup,location,age:umar}) => {
   return (
-    <div className='card bg-[#f2f2f2] shadow-lg rounded-3xl overflow-hidden w-80 h-80'>
-      <div className='top bg-custom-blue text-white h-24'>
-        <img src={MyImage} alt="" />
+    <div className="card bg-[#f2f2f2] rounded-3xl overflow-hidden w-80 h-96 transition duration-500 ease-in-out hover:shadow-2xl hover:cursor-pointer ">
+      <div className="top bg-[#F4C460] text-white h-32 flex justify-center items-end relative">
+        <img
+          src={MyImage}
+          alt=""
+          className="w-32 h-32 rounded-full absolute -bottom-10 border-2"
+        />
       </div>
 
       {/* bottom */}
-      <div className='px-7 flex flex-col gap-1 justify-center items-center '>
-        <h1 className='text-2xl font-semibold'>{naam}</h1>
-        <h1 className='text-md font-medium'>{occup} </h1>
-        <h2 className='capitalize text-sm border-b-4 w-32 border-custom-blue'>{umar}yrs</h2>
+      <div className="px-7 flex flex-col  mt-11 justify-center items-center ">
+        <h1 className="text-3xl font-semibold">{naam}</h1>
+        <h1 className="text-md font-medium">{occup} </h1>
+        <p>{location}</p>
+        <h2 className="capitalize text-sm border-b-4 w-32 border-[#F4C460] pb-2">
+          {umar}yrs
+        </h2>
       </div>
 
       {/* bottom-2 */}
-      <div className='mt-4'>
-        <p className='text-sm'>As a Full Stack Developer, I specialize in building end-to-end web applications.</p>
+      <div className="mt-2 px-11">
+        <p className="text-sm">
+          As a Full Stack Developer, I specialize in building web applications.
+        </p>
+      </div>
+
+      {/* ICONS */}
+      <div className=" flex justify-center gap-5 text-xl text-[#1F1F1F] mt-5">
+        <FaFacebook />
+        <FaInstagramSquare />
+        <FaLinkedin />
       </div>
     </div>
-  )
+  );
 }
 
 export default greetings
