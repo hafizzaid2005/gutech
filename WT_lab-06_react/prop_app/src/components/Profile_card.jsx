@@ -1,12 +1,12 @@
 import React from 'react'
-import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-import MyImage from "../assets/images/dp.png";
+// import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+// import MyImage from "../assets/images/dp.png";
 const greetings = ({name:naam,occup,location,age:umar}) => {
   return (
     <div className="card bg-[#f2f2f2] rounded-3xl overflow-hidden w-80 h-96 transition duration-500 ease-in-out hover:shadow-2xl hover:cursor-pointer ">
       <div className="top bg-[#F4C460] text-white h-32 flex justify-center items-end relative">
         <img
-          src={MyImage}
+          src=""
           alt=""
           className="w-32 h-32 rounded-full absolute -bottom-10 border-2"
         />
@@ -31,9 +31,9 @@ const greetings = ({name:naam,occup,location,age:umar}) => {
 
       {/* ICONS */}
       <div className=" flex justify-center gap-5 text-xl text-[#1F1F1F] mt-5">
-        <FaFacebook />
+        {/* <FaFacebook />
         <FaInstagramSquare />
-        <FaLinkedin />
+        <FaLinkedin /> */}
       </div>
     </div>
   );
