@@ -1,11 +1,17 @@
-import React, { use } from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react';
 
 const Login = () => {
-    const [naam,setNaam] = useState('')
-    const [age,setAge] = useState('')
-    const [pass,setPass] = useState('')
-    const [email,setEmail] = useState('')
+    const [naam,setNaam] = useState('');
+    const [age,setAge] = useState('');
+    const [pass,setPass] = useState('');
+    const [email,setEmail] = useState('');
+    const reset = () => {
+      setNaam ('');
+      setAge ('');
+      setPass ('');
+      setEmail  ('');
+    };
+
   return (
     <div>
         <h1>Log-in</h1>
@@ -35,8 +41,10 @@ const Login = () => {
       <p>name: {naam}</p>
       <p>password: {pass}</p>
       <p>email : {email}</p>
-      <p>age : {age}yrs</p>
+      <p>age : {age}years</p>
+      <button onClick={reset}>Clear</button>
       </div>
+    
 
     </div>
   );
