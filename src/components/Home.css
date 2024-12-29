@@ -1,0 +1,31 @@
+div {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
